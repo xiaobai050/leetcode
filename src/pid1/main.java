@@ -8,5 +8,6 @@ public class main {
 		int[]m=solution.twoSum(numbers, target);
 		System.out.println(m[0]);
 		System.out.println(m[1]);
+		
 	}
 }
