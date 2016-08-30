@@ -9,5 +9,6 @@ public class main {
 		System.out.println(m[0]);
 		System.out.println(m[1]);
 		
+		
 	}
 }
