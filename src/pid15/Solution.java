@@ -43,7 +43,7 @@ public class Solution {
     	
     	List<List<Integer>> rtn=new ArrayList<List<Integer>>();
 
-    	int[]nums0=
+    	int[]nums0= 
     		{-1, 0, 1, 2, -1, -4};
     	int[]nums=Nums();
     		
