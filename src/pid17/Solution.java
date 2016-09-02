@@ -12,7 +12,7 @@ public class Solution {
 	
 	public List<String> letterCombinations(String digits) {
 		
-		if (digits.length() == 0)
+		if (digits.length() == 0)		//不能写为 if(digits==""),否则在leetcode提交无法通过 
 			return lst;
 		digChar = digits.toCharArray();
 		len = digits.length();
