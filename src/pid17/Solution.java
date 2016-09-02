@@ -5,21 +5,22 @@ import java.util.List;
 
 public class Solution {
 	String[] table = { "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
-	List<String> lst = null;
+	List<String> lst= new ArrayList<>();
 
 	int len = 0;
 	char[] rtn, digChar;
-
+	
 	public List<String> letterCombinations(String digits) {
-
+		
+		if (digits.length() == 0)
+			return lst;
 		digChar = digits.toCharArray();
 		len = digits.length();
 		rtn = new char[len];
-		lst = new ArrayList<>();
 		stradd(0, rtn);
 		return lst;
 	}
-
+	
 	public void stradd(int count, char[] rtn) {
 		if (count == len) {
 			lst.add(String.valueOf(rtn));
