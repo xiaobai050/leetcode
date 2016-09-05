@@ -1,8 +1,5 @@
 package pid11;
 
-import java.util.Arrays;
-import java.util.HashMap;
-
 /**
  * Given n non-negative integers a1, a2, ..., an, where each represents a point
  * at coordinate (i, ai). n vertical lines are drawn such that the two endpoints
@@ -29,16 +26,5 @@ public class main {
 		Solution solution = new Solution();
 		int maxAreaValue=solution.maxArea(height);
 		System.out.println(maxAreaValue);
-		
-//		long startMili = System.currentTimeMillis();// 当前时间对应的毫秒数
-//		long endMili = System.currentTimeMillis();
-//		System.out.println("函数耗时为：" + (endMili - startMili) + "毫秒");
-
-		// HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
-
-		// for (int i = 0; i < height.length; i++)
-		// map.put(i + 1, height[i]);
-		// System.out.println(map);
-
 	}
 }
