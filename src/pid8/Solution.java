@@ -20,7 +20,9 @@ public class Solution {
 				begin++;
 				continue;
 			} else
-				return 0;
+				if(ito!='+'&&ito!='-')
+					return 0;
+				else break;
 		}
 		if(strArray[begin]=='+')begin++;
 		else if(strArray[begin]=='-'){negFlag=true;begin++;}
