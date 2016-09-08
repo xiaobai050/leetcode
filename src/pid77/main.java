@@ -19,8 +19,8 @@ public class main {
 		int k = 2;
 
 		test(n, k);
-		test(6, 3);
-		test(1, 1);
+//		test(6, 3);
+//		test(1, 1);
 	}
 
 	private static void test(int n, int k) {

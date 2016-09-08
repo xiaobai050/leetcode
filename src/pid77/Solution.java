@@ -9,24 +9,23 @@ public class Solution {
 	List<Integer> temp = new ArrayList<Integer>();
 
 	public List<List<Integer>> combine(int n, int k) {
+		int totle=k;
+		int end=n;
 		for (int i = 0; i < k; i++)
 			temp.add(0);
-		solve(0, k, n, 1);
+		solve(0, totle, 1, end);
 		return rtn;
 	}
 
-	public void solve(int index, int k, int n, int start) {
-		if (index == k) {
+	public void solve(int count, int totle, int start, int end) {
+		if (count == totle) {
 			List<Integer> tempAdd = new ArrayList<Integer>(temp); // 需要新建一個List，否則set會覆蓋之前已經add的List
-
 			rtn.add(tempAdd);
-			// System.out.println(rtn);
 			return;
 		}
-		for (int i = start; i <= n; i++) {
-			temp.set(index, i);
-			// System.out.println("i="+i+" index="+index);
-			solve(index + 1, k, n, i + 1);
+		for (int i = start; i <= end; i++) {
+			temp.set(count, i);
+			solve(count + 1, totle, i + 1, end);
 		}
 	}
 }
