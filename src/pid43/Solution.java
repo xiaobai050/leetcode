@@ -12,9 +12,9 @@ public class Solution {
 		char[] finalResult = new char[len1 + len2];
 		ArrayList<ArrayList<Character>> lines = new ArrayList<ArrayList<Character>>();
 
-		System.out.println("   " + num1);
-		System.out.println(" 〜 " + num2);
-		System.out.println("  ！！！！");
+//		System.out.println("   " + num1);
+//		System.out.println(" 〜 " + num2);
+//		System.out.println("  ！！！！");
 
 		int carry = 0;
 		for (int ito2 = len2 - 1; ito2 >= 0; ito2--) {
