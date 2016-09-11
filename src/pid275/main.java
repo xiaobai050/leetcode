@@ -14,14 +14,16 @@ import pid275.Solution;
 public class main {
 	public static void main(String[] args) {
 		int[][] citationsTable = { 
-				{0,01}, 
-				{ 0,1,3,3,3}, 
-				{5,5,5 }, 
+				{ 0 }, 
+				{ 1 }, 
 				{ 2 }, 
+				{ 0, 1 },
+				{ 0, 1, 3, 3, 3 }, 
+				{ 5, 5, 5 }, { 2 },
 				{ 1, 2, 3, 4, 5, 7, 8, 9 }, 
-				{ 3, 4,5,6,7 },
+				{ 3, 4, 5, 6, 7 },
 				{ 3, 0, 6, 1, 5 },
-				{ 1, 2, 3, 4, 5, 6,7,8,9,10,11,12,13,14 },
+				{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 },
 				};
 		for (int[] ito : citationsTable) {
 			test(ito);
@@ -39,5 +41,5 @@ public class main {
 	private static void sort(int[] citations) {
 		Arrays.sort(citations);
 	}
-	
+
 }
