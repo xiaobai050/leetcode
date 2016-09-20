@@ -19,7 +19,7 @@ package pid96;
  */
 public class main {
 	public static void main(String[] args) {
-		int[] testTable = { 0, 1, 2, 3, 4, 5, 6 };
+		int[] testTable = { 0, 1, 2, 3, 4, 5, 6, 10, };
 		for (int ito : testTable) {
 			test(ito);
 		}
@@ -31,9 +31,9 @@ public class main {
 		long begin = System.currentTimeMillis();
 		rtn = solution.numTrees(ito);
 		long end = System.currentTimeMillis();
-		System.out.println("rtn=" + rtn);
+		System.out.println(ito + ":	rtn=" + rtn);
 		System.out.println();
 		System.out.println("ºÄÊ±£º" + (end - begin) + "ms");
-		System.out.println("--------");
+		System.out.println("-------------------");
 	}
 }
