@@ -1,4 +1,4 @@
-package pid;
+package pid13;
 /**
  * 
  * @author °×
@@ -22,6 +22,7 @@ public class main {
 		int rtn = solution.romanToInt(s);
 		long end = System.currentTimeMillis();
 		System.out.println(rtn);
+		System.out.println();
 		System.out.println("ºÄÊ±£º"+(end-begin)+"ms"); 
 		System.out.println("-----------");
 	}
