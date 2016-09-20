@@ -1,4 +1,4 @@
-package pid13;
+package pid;
 /**
  * 
  * @author °×
@@ -6,22 +6,22 @@ package pid13;
  */
 public class main {
 	public static void main(String[] args) {
-		int[]testTable={
-				0,
+		String[]testTable={
+				"MDLXX","","MMMDLXXXVI"
 		};
-		for(int ito:testTable){
+		for(String ito:testTable){
 			test(ito);
 		}
 	}
 
-	private static void test(int ito) {
+	private static void test(String s) {
 		
+		System.out.println(s);
 		Solution solution = new Solution();
 		long begin = System.currentTimeMillis();
-		solution.method();
+		int rtn = solution.romanToInt(s);
 		long end = System.currentTimeMillis();
-		
-		System.out.println();
+		System.out.println(rtn);
 		System.out.println("ºÄÊ±£º"+(end-begin)+"ms"); 
 		System.out.println("-----------");
 	}
