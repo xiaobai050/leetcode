@@ -1,5 +1,6 @@
 /* The isBadVersion API is defined in the parent class VersionControl.
       boolean isBadVersion(int version); */
+package pid278;
 
 public class Solution extends VersionControl {
     public int firstBadVersion(int n) {
@@ -16,4 +17,6 @@ public class Solution extends VersionControl {
         if(isBadVersion(begin))return begin;
         return end;
     }
+
+
 }
