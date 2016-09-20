@@ -1,7 +1,9 @@
 package pid96;
 
 /**
- * Unique Binary Search Trees Given n, how many structurally unique BST's
+ * Unique Binary Search Trees 
+ * 
+ * Given n, how many structurally unique BST's
  * (binary search trees) that store values 1...n?
  * 
  * For example, Given n = 3, there are a total of 5 unique BST's.
@@ -29,9 +31,9 @@ public class main {
 		long begin = System.currentTimeMillis();
 		rtn = solution.numTrees(ito);
 		long end = System.currentTimeMillis();
-		System.out.println("rtn=" +rtn);
+		System.out.println("rtn=" + rtn);
 		System.out.println();
-		System.out.println("ºÄÊ±£º"+(end-begin)+"ms");
+		System.out.println("ºÄÊ±£º" + (end - begin) + "ms");
 		System.out.println("--------");
 	}
 }
