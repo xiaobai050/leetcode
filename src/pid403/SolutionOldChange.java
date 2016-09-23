@@ -31,9 +31,9 @@ public class SolutionOldChange {
 				int k = canArriveByK(j, nowPos);
 				if (k != 0){
 					// 在当前位置，记录当前跨度k					
-						if(nowPos==endPos-1)return true;
-						mapTable.put(nowPos| k<<11,true);
-					}
+					if(nowPos==endPos-1)return true;
+					mapTable.put(nowPos| k<<11,true);
+				}
 			}	
 		return false;
 	}
