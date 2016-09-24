@@ -17,7 +17,7 @@ public class SolutionSimpleHash {
 		int key = pos | k << 11;
 		
 		if (dp.get(key) != null)
-			return false;
+			return dp.get(key);
 
 		for (int i = pos + 1; i < stones.length; i++) {
 			int gap = stones[i] - stones[pos];
