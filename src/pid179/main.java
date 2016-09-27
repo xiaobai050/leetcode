@@ -16,7 +16,8 @@ import java.util.Arrays;
  */
 public class main {
 	public static void main(String[] args) {
-		int[][] testTable = { {3, 30, 34, 5, 9}, };
+		int[][] testTable = {
+				{999999998,999999997,999999999},{3,43,48,94,85,33,64,32,63,66},{1440,7548,4240,6616,733,4712,883,8,9576},{0,0},{121,12},{12,121},{1,2,3,4,5}, {3, 30, 34, 5, 9},{3, 20, 14, 4, 5}, };
 		for (int[] ito : testTable) {
 			test(ito);
 		}
