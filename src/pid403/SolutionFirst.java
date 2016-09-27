@@ -27,7 +27,8 @@ public class SolutionFirst {
 		if (k == 0)
 			return false;
 
-		int keyChar = pos | k << 13;
+		
+		int keyChar = pos<< 11 | k ;
 
 		if (pos == endPos)
 			return true;
