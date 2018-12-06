@@ -1,9 +1,16 @@
-package pid;
+package me.bai.LeetCode.pid;
 
+/**
+ * Hello world!
+ *
+ */
 public class Solution {
-	public Object method() {
-		
-		// TODO Auto-generated method stub
-		return null;
+
+	public static void main(String[] args) {
+		new Solution().test();
+	}
+
+	private void test() {
+
 	}
 }
